@@ -1,0 +1,118 @@
+body {
+  margin: 20px auto; /* Slight margin on top and bottom */
+  max-width: 900px; /* Width of the main-image.png */
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+}
+
+header section:nth-child(1) {
+  flex: 1;
+}
+
+header h1 {
+  font-style: italic;
+  font-family: cursive;
+}
+
+header p {
+  color: darkgray;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+header section:nth-child(2) {
+  margin-left: auto; /* Align to the right */
+  padding-top: 5px; /* Tiny bit of padding on top */
+}
+
+header section:nth-child(2) p {
+  text-indent: 2em; /* Indent the first line */
+  width: 100%; /* Span the width */
+  margin-bottom: 2em; /* 2ems of margin below each paragraph */
+}
+
+header section:nth-child(2) img {
+  margin-right: 5px; /* Space between images */
+}
+
+header section:nth-child(3) {
+  margin-left: 15px; /* 15px to the left of the third section */
+}
+
+header section:nth-child(4) {
+  margin-top: 100px; /* Small distance below other sections */
+}
+
+main {
+  margin-top: 20px; /* Good ways under the header */
+}
+
+main section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+main section:nth-child(1) h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+main section:nth-child(1) p {
+  font-size: 10px;
+  color: lightgray;
+  margin: 0;
+}
+
+main img:nth-child(2) {
+  vertical-align: bottom;
+}
+
+main section:nth-child(3) p {
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  columns: 2;
+  background-image: url("images/list-bg.png");
+  font-family: "Comic Sans MS", cursive;
+  color: #333; /* Very dark grey */
+  width: 100%; /* Span the width */
+  text-align: center; /* Center the columns */
+}
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  content: "\2610"; /* Unicode for empty checkbox */
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer section:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Space between image and divs */
+}
+
+footer section:nth-child(1) div {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+}
+
+footer p {
+  color: lightgray;
+  font-size: 12px;
+}
